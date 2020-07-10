@@ -1,0 +1,374 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    --bg-dark-color: #111111;
+    --bg-silver-color: #FAFAFA;
+    --light-bg-color: #fff;
+    --light-btn-bg-color: rgba(53, 51, 51, 0.904);
+    --text-color: #fff;
+    --dark-text-color: #111111;
+    --btn-bg-color: #F46632;
+}
+
+
+html{
+    /* text-decoration: none; */
+}
+
+body{
+    width: 100%;
+    font-family: lato;
+    color: #000;
+    /* margin: 0; */
+}
+
+p{
+    line-height: 2.3rem;
+}
+
+.wrapper{
+
+}
+
+header{
+    background-color: var(--bg-dark-color);
+    padding: 40px 80px 0px 80px;
+    position: relative;
+    height: 300px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin: 0 0 4vmax 0;
+    padding: 0px 10px;
+    position: relative;
+}
+
+.logo{
+    width: 8%;
+}
+
+.logo img{
+    display: block;
+    width: 70px;
+    /* height: 60px; */
+}
+
+.nav-menu{
+    /* border: 2px solid green; */
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+.nav-menu-link{
+    /* display: block; */
+    text-decoration: none;
+    padding: 6px;
+    font-size: smaller;
+    color: var(--text-color);
+}
+
+.nav-menu-link:hover{
+    color: rgba(255, 255, 255, 0.658);
+}
+
+.nav-menu :last-child{
+    /* color: yellow; */
+    margin: 0px 0 0 40px;
+    border-radius: 8px;
+    background-color: var(--light-btn-bg-color);
+    padding: 8px 16px;
+}
+
+.hamburger{
+    /* display: none; */
+    height: 3px;
+    width: 30px;
+    background-color: var(--light-bg-color);
+    /* position: relative; */
+    /* display: flex; */
+    /* transform: rotate(-45deg); */
+}
+
+.hamburger::before{
+    content: "";
+    background-color: var(--light-bg-color);
+    /* height: 5px; */
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    top: 32%;
+    /* top: 45%;
+    transform: rotate(-45deg); */
+}
+
+.hamburger::after{
+    content: "";
+    background-color: var(--light-bg-color);
+    /* height: 5px; */
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    bottom: 32%;
+    /* bottom: 48%;
+    transform: rotate(45deg); */
+}
+
+
+.uiuxbrand{
+    background-color: var(--light-bg-color);
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid green; */
+    border-radius: 8px;
+    padding: 60px;
+    transform: translateY(10px);
+    position: absolute;
+    /* width: 72%; */
+    left: 10%;
+    right: 10%;
+    /* margin: auto; */
+}
+
+
+.factory-course{
+    /* border: 2px solid tomato; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.factory-course h1{
+    font-size: 3vmax;
+    position: relative;
+    margin: 0;
+}
+
+.factory-course h1::after{
+    content: "Product Factory";
+    color: gainsboro;
+    position: absolute;
+    top: 150%;
+    left:0;
+    right:0;
+    font-size: 1.5rem;
+    margin: 0;    
+}
+
+.factory-bg{
+    background: rgba(255,255,255,0.9) url("images/UI_UX.png") no-repeat center;
+    background-size: contain;
+    height: 5.0em;
+    width: 100%;
+}
+
+.factory-course p{
+    font-size: 1.5vmax;
+}
+
+.factory-uml{
+    /* border: 2px solid cornflowerblue; */
+    flex: 1;
+}
+
+.factory-uml figure{
+    width: 100%;
+}
+
+.factory-uml figure img{
+    display: block;
+    width: 80%;
+    /* max-height: fit-content; */
+}
+
+.register{
+    background: var(--btn-bg-color);
+    border: 0;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 20px 0;
+    color: var(--text-color);
+    width: 12rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.register:hover{
+    background-color: rgba(247, 153, 66,0.7);
+}
+
+/*BELOW HEADER*/
+.about{
+    background-color: var(--bg-silver-color);
+    height: 500px;
+    padding: 550px 80px 40px 80px;
+}
+
+.about-overall{
+    /* border: 2px solid red; */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background: var(--light-bg-color);
+    border-radius: 12px;
+}
+
+
+.about-graph{
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid yellow; */
+    /* border: 2px solid green; */
+}
+
+
+.about-graph>*{
+    /* border: 1px solid green; */
+    flex: 1;
+}
+
+.about-cycle figure{
+    background-color: var(--bg-dark-color);
+    width: 370px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-130px);
+
+}
+
+.about-cycle figure::before{
+    content: "";
+    border-radius: 50%;
+    height: 120px;
+    width: 170px;
+    background-color: transparent;
+    border: 2px solid var(--bg-dark-color);
+    transform: translate(70%,70%);
+}
+
+.about-cycle figure::after{
+    content: "";
+    border-radius: 50%;
+    height: 120px;
+    width: 100px;
+    background-color: transparent;
+    border: 2px solid var(--bg-dark-color);
+    transform: translate(-220%,70%);
+}
+
+.social-media{
+    display: flex;
+    justify-content: space-around;
+    /* border: 3px solid tomato; */
+    /* flex-direction: column; */
+    padding: 10px;
+}
+
+.about-bg{
+    /* border: 2px solid red; */
+    margin: auto;
+    background: rgba(255,255,255,0.9) url("images/About.png") no-repeat center;
+    background-size: contain;
+    height: 3.5rem;
+    width: 50%;
+}
+
+/* .about-bg::before{
+    content: "About";
+    border: 2px solid green;
+    font-size: 5rem;
+    color: var(--light-bg-color);
+    position: absolute;
+    transform: translate(-32%,-45%);
+    font-weight: bold;
+    /* z-index: -3; 
+} */
+
+.about-bg h1{
+    /* z-index: -1; */
+    margin: auto;
+    font-size: 1.4rem;
+}
+
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-icons>*{
+    cursor: pointer;
+}
+
+.social-icons i{
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    /* border: 2px solid blue; */
+}
+
+.about-notes{
+    margin: 35px auto;
+    /* padding: 20px; */
+    /* border: 2px solid red; */
+}
+
+
+
+
+@media(max-width:900px){
+    .logo{
+        /* border: 2px solid red; */
+        margin: 0;
+        width: 30%;
+    }
+
+    .hamburger{
+        position: absolute;
+        top: 6%;
+        left: 90%;
+    }
+
+    .hamburger::after{
+    bottom: 48%;
+    transform: rotate(45deg);
+    }
+    .hamburger::before{
+    top: 45%;
+    transform: rotate(-45deg);
+    }
+    .navbar{
+        display: block;
+    }
+    .nav-menu{
+        display: block;
+    }
+    .nav-menu-link{
+        display: block;
+    }
+    .nav-menu-link:last-child{
+        margin: 0;
+    }
+    .nav-menu{
+        display: none;
+    }
+}
+
+@media(max-width: 660px){
+    .uiuxbrand{
+        display: block;
+    }
+}
