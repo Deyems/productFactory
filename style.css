@@ -11,6 +11,7 @@
     --text-color: #fff;
     --dark-text-color: #111111;
     --btn-bg-color: #F46632;
+    box-sizing: border-box;
 }
 
 
@@ -30,24 +31,28 @@ p{
 }
 
 .wrapper{
-
+    width: 100%;
 }
 
 header{
     background-color: var(--bg-dark-color);
-    padding: 40px 80px 0px 80px;
+    /* padding: 40px 80px 0px 80px; */
     position: relative;
     height: 300px;
+    width: 100%;
+    /* border: 2px solid tomato; */
 }
 
 .navbar{
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* border: 2px solid red; */
-    margin: 0 0 4vmax 0;
+    margin: auto;
     padding: 0px 10px;
     position: relative;
+
 }
 
 .logo{
@@ -130,12 +135,12 @@ header{
     /* border: 2px solid green; */
     border-radius: 8px;
     padding: 60px;
-    transform: translateY(10px);
-    position: absolute;
-    /* width: 72%; */
-    left: 10%;
-    right: 10%;
-    /* margin: auto; */
+    transform: translateY(50px);
+    /* position: absolute; */
+    width: 69%;
+    /* left: 10%; */
+    /* right: 10%; */
+    margin: auto auto;
 }
 
 
@@ -209,17 +214,22 @@ header{
 /*BELOW HEADER*/
 .about{
     background-color: var(--bg-silver-color);
-    height: 500px;
-    padding: 550px 80px 40px 80px;
+    min-height: 220vh;
+    /* padding: 550px 80px 40px 80px; */
+    width: 100%;
+    border: 2px solid transparent;
 }
 
 .about-overall{
     /* border: 2px solid red; */
-    padding: 30px;
+    padding: 60px;
     display: flex;
     flex-direction: column;
     background: var(--light-bg-color);
     border-radius: 12px;
+    width: 70%;
+    margin: 100px auto;
+    transform: translateY(400px);
 }
 
 
@@ -227,6 +237,8 @@ header{
     display: flex;
     justify-content: space-around;
     /* border: 2px solid yellow; */
+    width: 98%;
+    margin: auto;
     /* border: 2px solid green; */
 }
 
@@ -238,14 +250,15 @@ header{
 
 .about-cycle figure{
     background-color: var(--bg-dark-color);
-    width: 370px;
-    height: 200px;
+    /* background-color: transparent; */
+    width: 100%;
+    height: 300px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     transform: translateY(-130px);
-
+    position: relative;
 }
 
 .about-cycle figure::before{
@@ -255,7 +268,7 @@ header{
     width: 170px;
     background-color: transparent;
     border: 2px solid var(--bg-dark-color);
-    transform: translate(70%,70%);
+    transform: translate(70%,110%);
 }
 
 .about-cycle figure::after{
@@ -265,7 +278,56 @@ header{
     width: 100px;
     background-color: transparent;
     border: 2px solid var(--bg-dark-color);
-    transform: translate(-220%,70%);
+    transform: translate(-220%,110%);
+}
+
+.about-cycle .play-btn{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: var(--light-bg-color);
+    /* background-color: red; */
+    position: absolute;
+    left: 82%;
+    top: 82%;
+    color: var(--bg-dark-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* left: 200px; */
+    /* z-index: 1000000; */
+}
+
+.drag-btn{
+    position: absolute;
+    left: 110%;
+    top: 62%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-dark-color);
+    /* color: var(--light-bg-color); */
+}
+
+.drag-btn .dot{
+    border-radius: 50%;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-color: var(--light-bg-color);
+}
+
+.drag-btn::before{
+    content: "";
+    height: 3px;
+    width: 3rem;
+    background-color: var(--bg-dark-color);
+    /* background-color: red; */
+    position: absolute;
+    transform: translateX(-90%);
+    /* color: var; */
+
 }
 
 .social-media{
@@ -280,9 +342,15 @@ header{
     /* border: 2px solid red; */
     margin: auto;
     background: rgba(255,255,255,0.9) url("images/About.png") no-repeat center;
-    background-size: contain;
+    background-size: cover;
     height: 3.5rem;
-    width: 50%;
+    width: 70%;
+    text-align: center;
+}
+
+.about-bg h2{
+    /* text-align: center; */
+    transform: translate(3%, 52%);
 }
 
 /* .about-bg::before{
@@ -322,10 +390,184 @@ header{
 
 .about-notes{
     margin: 35px auto;
+    width: 97%;
     /* padding: 20px; */
     /* border: 2px solid red; */
 }
 
+.experience-container{
+    width: 100%;
+    background-color: var(--light-bg-color);
+    min-height: 4500px;
+    border: 3px solid gold;
+    /* text-align: center; */
+}
+
+.experience-container h2{
+    text-align: center;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;    
+    width: 70%;
+    /* height: 600px; */
+    min-height: 600px;
+    /* margin: auto; */
+    /* border: 2px solid red; */
+    background-color: #fff;
+    border-radius: 12px;
+    /* box-shadow: 0 5px 8px rgba(255,255,255,0.8); */
+    transform: translateY(-50%);
+    margin: auto;
+    margin-top: 60px;
+    padding: 15px;
+    box-shadow: 0px 5px 20px rgb(200,200,200);
+}
+
+.nav-pill{
+    width: 85%;
+    /* border: 2px solid green; */
+    margin: auto;
+}
+
+.nav-pill h3{
+    /* margin: auto; */
+    background: rgba(255,255,255,0.9) url("images/Experience.png") no-repeat center;
+    background-size: contain;
+    height: 4.5rem;
+    /* width: 70%; */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2em;
+    /* border: 2px solid yellowgreen; */
+    line-height: 4.5rem;
+    /* transform: translateY(55%); */
+}
+
+.nav-pill-item-container{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    border-radius: 8px 8px 8px 8px;
+    border: 1px solid var(--bg-dark-color);
+    margin: 2rem 0;
+}
+
+/* nav-pill-item */
+.nav-pill-item{
+    border-right: 1px solid var(--bg-dark-color);
+    padding: 15px;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+}
+
+.nav-pill-item.active{
+    background-color: var(--bg-dark-color);
+    color: var(--light-bg-color);
+}
+
+.nav-pill-slide{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    /* border: 2px solid brown; */
+}
+
+.nav-pill-slide>*{
+    padding: 8px;
+}
+
+.nav-pill-slide .pixs img{
+    display: block;
+    /* width: 170px; */
+    /* border: 2px solid slateblue; */
+}
+
+.nav-pill-slide p{
+    font-size: 1.5vmax;
+}
+
+.session{
+    /* border: 2px solid red; */
+    width: 70%;
+    margin: auto;
+}
+
+.session-container{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-left: 1px solid rgb(200,200,200,0.5);
+}
+
+.session-headers{
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-silver-color);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.session-headers::before{
+    content: "";
+    height: 25px;
+    width: 3px;
+    /* border: 2px solid red; */
+    border-right: 10px;
+    background-color: var(--bg-dark-color);
+    transform: translateX(-25px);
+}
+
+.session-header-title{
+    flex: 1;
+}
+
+.session-header-rest{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex:3;
+}
+
+.icon-cover{
+    background-color: var(--bg-dark-color);
+    width: 8px;
+    height: 8px;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--light-bg-color);
+    font-size: 10px;
+    padding: 7px 5px;
+    cursor: pointer;
+    /* display: block; */
+}
+
+.session-body{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.session-facilitator{
+    flex: 1;
+    /* border: 2px solid chartreuse; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.session-facilitator img{
+    width: 65px;
+    height: 65px;
+}
+
+.session-intro-notes{
+    flex: 3;
+    padding: 10px;
+}
 
 
 
