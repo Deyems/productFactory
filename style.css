@@ -5,7 +5,8 @@
     padding: 0;
     text-decoration: none;
     --bg-dark-color: #111111;
-    --bg-silver-color: #FAFAFA;
+    --bg-silver-color: #fafafa;
+    --overlay-bg-color: rgba(247, 244, 244, 0.842);
     --light-bg-color: #fff;
     --light-btn-bg-color: rgba(53, 51, 51, 0.904);
     --text-color: #fff;
@@ -38,7 +39,7 @@ header{
     background-color: var(--bg-dark-color);
     /* padding: 40px 80px 0px 80px; */
     position: relative;
-    height: 300px;
+    height: 450px;
     width: 100%;
     /* border: 2px solid tomato; */
 }
@@ -135,7 +136,7 @@ header{
     /* border: 2px solid green; */
     border-radius: 8px;
     padding: 60px;
-    transform: translateY(50px);
+    transform: translateY(8%);
     /* position: absolute; */
     width: 69%;
     /* left: 10%; */
@@ -214,10 +215,11 @@ header{
 /*BELOW HEADER*/
 .about{
     background-color: var(--bg-silver-color);
-    min-height: 220vh;
+    min-height: 200vh;
     /* padding: 550px 80px 40px 80px; */
     width: 100%;
     border: 2px solid transparent;
+    padding-top: 15%;
 }
 
 .about-overall{
@@ -229,7 +231,7 @@ header{
     border-radius: 12px;
     width: 70%;
     margin: 100px auto;
-    transform: translateY(400px);
+    /* transform: translateY(400px); */
 }
 
 
@@ -398,13 +400,19 @@ header{
 .experience-container{
     width: 100%;
     background-color: var(--light-bg-color);
-    min-height: 4500px;
-    border: 3px solid gold;
+    min-height: 4100px;
+    /* border: 3px solid gold; */
     /* text-align: center; */
+    /* padding-top: 20%; */
+    position: relative;
 }
 
 .experience-container h2{
-    text-align: center;
+    /* text-align: center; */
+    position: absolute;
+    top: 7.5%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .experience{
@@ -412,13 +420,13 @@ header{
     flex-direction: column;    
     width: 70%;
     /* height: 600px; */
-    min-height: 600px;
+    /* min-height: 600px; */
     /* margin: auto; */
     /* border: 2px solid red; */
     background-color: #fff;
     border-radius: 12px;
     /* box-shadow: 0 5px 8px rgba(255,255,255,0.8); */
-    transform: translateY(-50%);
+    transform: translateY(-60%);
     margin: auto;
     margin-top: 60px;
     padding: 15px;
@@ -494,6 +502,8 @@ header{
     /* border: 2px solid red; */
     width: 70%;
     margin: auto;
+    transform: translateY(-3%);
+    box-shadow: 0 10px 20px rgba(100, 100, 100, 0.6);
 }
 
 .session-container{
@@ -568,6 +578,80 @@ header{
     flex: 3;
     padding: 10px;
 }
+
+.masters-faq{
+    background-color: var(--bg-silver-color);
+    /* padding-top: 20%; */
+
+}
+
+.masters-row-with-overlay{
+    position: relative;
+}
+
+.masters-container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    border: 2px solid green;
+    background-color: var(--light-bg-color);
+    border-radius: 12px;
+    padding: 20px;
+    transform: translateY(-50%);
+}
+
+.masters-container h2{
+    text-align: center;
+    margin: 40px;
+}
+
+.masters-row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px 0;
+}
+
+/* .masters-row-with-overlay:hover{
+
+} */
+
+.overlay{
+    display: none;
+    position: absolute;
+    /* height: 200px; */
+    background-color: rgba(0,0,0,0.3);
+    top: 0;
+    bottom: 26%;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+    /* border: 2px solid red; */
+    padding: 12px;
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center; */
+}
+
+.social-icons-row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20% auto;
+    color: var(--light-bg-color);
+}
+
+.brand-about-masters{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--overlay-bg-color);
+    border-radius: 5px;
+    padding: 5px 0;
+    /* margin: auto; */
+}
+
 
 
 
