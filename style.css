@@ -404,6 +404,9 @@ header{
     /* border: 2px solid red; */
 }
 
+/***A NEW SECTION HERE
+**************/
+
 .experience-container{
     width: 100%;
     background-color: var(--light-bg-color);
@@ -439,6 +442,9 @@ header{
     padding: 15px;
     box-shadow: 0px 5px 20px rgb(200,200,200);
 }
+
+/***A NEW SECTION HERE
+**************/
 
 .nav-pill{
     width: 85%;
@@ -504,6 +510,9 @@ header{
 .nav-pill-slide p{
     font-size: 1.5vmax;
 }
+
+/***A NEW SECTION HERE
+**************/
 
 .session{
     /* border: 2px solid red; */
@@ -586,6 +595,9 @@ header{
     padding: 10px;
 }
 
+/***A NEW SECTION HERE
+**************/
+
 .masters-faq{
     background-color: var(--bg-silver-color);
     /* padding-top: 20%; */
@@ -655,6 +667,9 @@ header{
     padding: 5px 0;
     /* margin: auto; */
 }
+
+/***A NEW SECTION HERE
+**************/
 
 .faq-container h2{
     font-size: 2rem;
@@ -851,7 +866,218 @@ header{
 }
 
 
+/***A NEW SECTION HERE
+**************/
 
+.projects{
+    width: 100%;
+}
+
+.projects-done-container{
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+
+.pro-head{
+    /*****/
+}
+
+.pro-head h2{
+    text-align: center;
+}
+
+.pro-body{
+    padding: 60px 10px;
+    display: flex;
+    /* justify-content: space-between; */
+    /* border: 2px solid crimson; */
+}
+
+.pro-body>*{
+    flex: 1;
+    /* border: 1px solid fuchsia; */
+    padding: 25px;
+}
+
+.todo-list-title{
+    list-style-type: disc;
+    list-style-position: inside;
+    /* list-style: circle; */
+    font-size: 1.5rem;
+}
+
+.todo-list ul{
+    list-style: url("images/checkMark.png");
+    list-style-position: inside;
+    margin: 40px 0;
+}
+
+.todo-list ul li{
+    margin: 8px 0;
+}
+
+.pagination-btn{
+    background-color: var(--bg-silver-color);
+    color: var(--bg-dark-color);
+    padding: 10px;
+    transition: background-color 0.5s, color 0.5s;
+    width: 80px;
+}
+
+.pagination-btn:hover{
+    background-color: var(--bg-dark-color);
+    color: var(--bg-silver-color);
+}
+
+.slide-frame{
+    width: 100%;
+    height: 250px;
+    background-color: var(--bg-silver-color);
+    border-radius: 10px;
+}
+
+.slide-cross{
+    width: 60%;
+    margin: auto;
+    height: 250px;
+    background-color: var(--light-bg-color);
+    background-color: red;
+    box-shadow: 4px 5px 12x rgba(151, 151, 151, 0.304);
+    border-radius: 10px;
+    /* z-index: ; */
+    transform: translateY(-60%);
+}
+
+.ctrl-btn{
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-350%);
+}
+
+.hide{
+    display: none;
+}
+
+.schedule{
+    background-color: var(--bg-silver-color);
+    width: 100%;
+}
+
+.schedule-container{
+    width: 70%;
+    margin: auto;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* border: 2px solid palevioletred; */
+}
+
+.schedule-container>*{
+    margin: 10px 0;
+}
+
+.timeline{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid brown; */
+}
+
+.linear-timeline{
+    display: flex;
+    /* justify-content: center; */
+    /* flex-direction: row; */
+    align-items: center;
+}
+
+.circle{
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    /* background-color: var(--dark-text-color); */
+}
+
+.circle.start{
+    background-color: var(--light-bg-color);
+    border: 1px solid var(--dark-text-color);
+}
+
+.circle.end{
+    background-color: var(--dark-text-color);
+}
+
+.dashes{
+    /* height: 2px; */
+    border: 2px dashed black;
+    width: 300px;
+}
+
+.date-show{
+    display: flex;
+    justify-content: space-between;
+}
+
+.date{
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--light-bg-color);
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    font-size: 1.5em;
+}
+
+.left-days{
+    display: flex;
+    justify-content: center;
+}
+
+.left-days>*{
+    margin: 0 10px;
+}
+
+.days-left-count{
+    background-color: var(--dark-text-color);
+    color: var(--bg-silver-color);
+    padding: 10px;
+}
+
+footer{
+    padding: 20px;
+}
+
+.foot{
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: auto;
+    /* border: 1px solid gold; */
+}
+
+.foot>*{
+    /* border: 2px solid chartreuse; */
+}
+
+.s-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 150px;
+
+}
+
+.s-icons i{
+    display: block;
+    /* border: 1px solid brown; */
+    font-size: 1.5em;
+}
+
+/* .footer-logo{
+} */
 
 @media(max-width:900px){
     .logo{
