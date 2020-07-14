@@ -4,14 +4,28 @@ class ProductFactory{
 
     }
 
-    btn = document.querySelector('harmburger');
+    btn = document.querySelector(".toggle-btn");
+    mobile_nav = document.querySelector(".nav-menu-mobile");
+
+    eachMaster = document.querySelectorAll(".masters-row-with-overlay");
 
     run(){
         //LISTEN FOR EVENTS HERE
-        this.btn.addEventListener("click",this.showToLog);
+        this.btn.addEventListener("click",this.showNav);
+
+        Array.from(this.eachMaster).forEach((master) => {
+            master.addEventListener("mouseover",this.showLayer);
+        });
+
     }
-    showToLog(){
-        console.log('working!');
+    showNav = (e) => {
+        this.mobile_nav.classList.toggle('show');
+    }
+
+    showLayer = (e)=> {
+        console.log("Hi, you work");
+        console.log(e.target.parentElement.children[1]);
+        e.target.parentElement.children[1].classList.toggle('show');
     }
 }
 
