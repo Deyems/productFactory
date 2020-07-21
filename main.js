@@ -32,4 +32,8 @@ class ProductFactory{
 let decadev_one = new ProductFactory();
     decadev_one.run();
 
-AOS.init();
+AOS.init({
+    once: true, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom',
+});
