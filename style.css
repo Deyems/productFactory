@@ -75,6 +75,10 @@ header{
 }
 
 .navbar{
+
+}
+
+.navbar>div:first-child{
     width: 70%;
     display: flex;
     justify-content: space-between;
@@ -82,11 +86,12 @@ header{
     /* border: 2px solid red; */
     margin: auto;
     padding: 20px 10px;
-    position: relative;
+    /* position: relative; */
 }
 
 .logo{
-    width: 8%;
+    /* width: 8%; */
+    /* border: 2px solid blue; */
 }
 
 .logo img{
@@ -100,13 +105,13 @@ header{
     display: flex;
     justify-content: space-evenly;
     width: 70%;
-    font-family: 'Dana Regular';
 }
 
 .nav-menu-link{
     /* display: block; */
     text-decoration: none;
     padding: 6px;
+    padding-left: 12px;
     font-size: smaller;
     color: var(--text-color);
 }
@@ -117,8 +122,8 @@ header{
 
 .nav-menu :last-child{
     /* color: yellow; */
-    margin: 0px 0 0 40px;
-    border-radius: 8px;
+    margin: 0px 0 0 66px;
+    border-radius: 20px;
     background-color: var(--light-btn-bg-color);
     padding: 8px 16px;
 }
@@ -126,11 +131,13 @@ header{
 
 .nav-menu-mobile{
     display: none;
+    /* display: block; */
+    width: 80%;
+    margin: auto;
+    padding: 5px 15px;
 }
 
-.nav-menu-mobile.show{
-    display: block;
-}
+
 
 /* .toggle-btn{
     /* display: none;
@@ -440,7 +447,7 @@ header{
 .experience-container{
     width: 100%;
     background-color: var(--light-bg-color);
-    min-height: 600vh;
+    min-height: 480vh;
     /* border: 3px solid gold; */
     position: relative;
 }
@@ -452,10 +459,12 @@ header{
     /* border: 2px solid red; */
     background-color: #fff;
     border-radius: 12px;
-    transform: translateY(-60%);
-    margin: auto;
-    padding: 15px;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    padding: 5% 25px;
     box-shadow: 0px 5px 20px rgb(200,200,200);
+    /* height: 1300px; */
+    font-size: 0.7rem;
 }
 
 
@@ -495,6 +504,11 @@ header{
     text-align: center;
 }
 
+.nav-pill-item:hover{
+    background-color: var(--bg-dark-color);
+    color: var(--light-bg-color);
+}
+
 .nav-pill-item.active{
     background-color: var(--bg-dark-color);
     color: var(--light-bg-color);
@@ -527,16 +541,25 @@ header{
     font-size: 2.0vmax;
 }
 
+.session-title{
+    /* border: 2px solid red; */
+    margin: 20% 0;
+    padding: 30px 30px;
+    transform: translateY(-500%);
+}
+
 .experience-container h2{
     text-align: center;
-    /* border: 2px solid red; */
-    margin: 20px;
+    /* border: 2px solid blue; */
+    /* margin: 20px; */
+    /* transform: translateY(-60px); */
+    /* transform: translateY(-3%); */
 }
 
 .session{
     width: 70%;
     margin: auto;
-    transform: translateY(-3%);
+    transform: translateY(-20%);
     box-shadow: 0 10px 20px rgba(100, 100, 100, 0.6);
     /* border: 1px solid yellow; */
 }
@@ -622,7 +645,8 @@ header{
 
 .masters-faq{
     background-color: var(--bg-silver-color);
-    padding: 50px 0;
+    padding: 10% 0;
+    min-height: 200vh;
     /* border: 2px solid red; */
 }
 
@@ -633,14 +657,14 @@ header{
 .masters-container{
     display: flex;
     flex-direction: column;
-    width: 78%;
+    width: 70%;
     margin: auto;
     /* border: 2px solid green; */
     background-color: var(--light-bg-color);
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 12px 25px rgba(100, 100, 100, 0.958);
-    transform: translateY(-50%);
+    transform: translateY(-60%);
 }
 
 .masters-container h2{
@@ -746,6 +770,7 @@ header{
     background-color: var(--light-bg-color);
     width: 100%;
     height: 500px;
+    padding: 3% 0;
     /* border: 2px solid green; */
 }
 
@@ -1131,6 +1156,88 @@ footer{
         display: none;
     }
 } */
+@media(max-width: 1420px){
+    .masters-faq{
+        /* border: 2px solid red; */
+
+    }
+    .masters-container{
+        /* border: 2px solid green; */
+        transform: translate(0,0);
+    }
+    .faq-container{
+        transform: translate(0,0);
+    }
+
+}
+@media(max-width:1025px){
+    /** IPAD VIEW */
+    header{
+        /* border: 2px solid fuchsia; */
+        height: 40vh;
+    }
+    .about{
+        padding: 120px 0;
+        min-height: 113vh;
+    }
+    
+    .session-title{
+        transform: translateY(-700%);
+        /* border: 2px solid red; */
+    }
+    .experience{
+        transform: translateY(-70%);
+        /* border: 2px solid red; */
+    }
+    .experience-container{
+        /* border: 2px solid green; */
+        min-height: 150vh;
+        padding: 12% 0;
+    }
+    .nav-pill-slide p {
+        font-size: 1.2vmax;
+    }
+    .masters-container{
+        transform: translateY(-50%);
+    }
+    .masters-faq {
+        /* background-color: var(--bg-silver-color); */
+        /* padding: 10% 0; */
+        min-height: 155vh;
+    }
+    .faq-container {
+        transform: translate(0,-90%);
+    }
+
+    .request-mail>:first-child {
+        padding-top: 110px;
+    }
+    .request-mail {
+        width: 90%;
+    }
+    .ctrl-btn {
+        transform: translateY(-11vmax);
+    }
+    .projects-done-container {
+        width: 85%;
+    }
+    .schedule-container {
+        width: 85%;
+    }
+    .left-days{
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .register{
+        width: 70%;
+    }
+
+    .foot {
+        width: 85%;
+    }
+
+}
 
 @media(max-width:900px){
     header{
@@ -1151,20 +1258,19 @@ footer{
         /* border: 2px solid red; */
         width: 50px;
         height: 50px;
-        background-color: rgba(100, 100, 100, 0.88);
+        background-color: rgba(50, 50, 50, 0.88);
         border-radius: 5px;
-        position: absolute;
-        top: 30px;
-        left: 90%;
         padding: 0% 1%;
         cursor: pointer;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
     }
     
     .toggle-btn>*{
         height: 3px;
-        width: 90%;
-        margin: 30% auto;
-        background-color: var(--bg-dark-color);
+        width: 100%;
+        background-color: var(--light-bg-color);
     }
 
     /* .hamburger{
@@ -1205,14 +1311,18 @@ footer{
         /* bottom: 48%;
         transform: rotate(45deg); 
     } */
-
     .navbar{
-        display: block;
-        border: 1px solid transparent;
-        /* padding-top: 9%; */
-        padding: 0;
+        /* border: 1px solid green; */
     }
-    
+    .navbar>div:first-child{
+        /* display: block; */
+        border: 1px solid transparent;
+        /* border: 1px solid salmon; */
+        width: 80%;
+    }
+    .nav-menu-mobile.show{
+        display: block;
+    }
     .nav-menu-mobile{
         display: none;
         /* border: 2px solid yellow; */
@@ -1230,8 +1340,8 @@ footer{
 
     .logo{
         /* border: 2px solid red; */
-        margin-top: 40px;
-        width: 30%;
+        /* margin-top: 40px; */
+        width: 20%;
     }
     
     .logo img{
@@ -1264,12 +1374,12 @@ footer{
 
     .about{
         /* border: 2px solid darkkhaki; */
-        padding: 0 0;
+        padding: 150px 0;
         min-height: 155vh;
     }
 
     .about-overall{
-        transform: translate(0,50%);
+        transform: translate(0,40%);
         margin-top: 180px;
         width: 80%;
         /* border: 2px solid olive; */
@@ -1328,6 +1438,9 @@ footer{
         /* border: 2px solid skyblue; */
         margin-top: 30px;
         width: 80%;
+    }
+    .session-title{
+        transform: translate(0,0);
     }
     .session-container{
         /* border: 2px solid blue; */
@@ -1618,9 +1731,12 @@ footer{
 }
 
 @media(max-width: 1100px) and (min-width: 1001px){
-    .experience-container{
-        /* border: 2px solid blueviolet; */
+    /* .experience-container{
+        /* border: 2px solid blueviolet; 
         min-height: 690vh;
+    } */
+    .session-title{
+        /* border: 2px solid green; */
     }
 }
 
@@ -1639,12 +1755,9 @@ footer{
         /* border: 1px solid red; */
     }
     .about{
-        border: 2px solid darkkhaki;
+        /* border: 2px solid darkkhaki; */
     }
-    .experience-container{
-        /* border: 2px solid blueviolet; */
-        min-height: 730vh;
-    }
+    
 }
 
 @media(min-width: 600px) and (max-width: 900px){
@@ -1658,5 +1771,35 @@ footer{
     .experience-container{
         /* border: 2px solid forestgreen; */
         min-height: 1170vh;
+    }
+}
+
+@media(max-width:400px){
+    .about-overall {
+        transform: translate(0,0%);
+    }
+    .session-title {
+        /* border: 2px solid red; */
+        margin: 13% 0;
+        padding: 15px 30px;
+    }
+    .session-intro-notes p{
+        line-height: 1.5rem;
+    }
+    .masters-faq {
+        margin: 40px auto;
+        width: 100%;
+    }
+    .achievements-first {
+        width: 100%;
+    }
+    .achievements-first>* {
+        margin: 30px 0;
+    }
+    .pro-body>* {
+        padding: 17px 0;
+    }
+    .pro-body {
+        padding: 60px 0px;
     }
 }
